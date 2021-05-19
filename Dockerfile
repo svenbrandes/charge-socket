@@ -1,0 +1,11 @@
+FROM node
+
+WORKDIR /
+
+ADD . /
+
+ENV PORT 8080
+
+EXPOSE $PORT
+
+CMD node app
